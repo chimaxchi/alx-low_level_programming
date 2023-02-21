@@ -1,54 +1,27 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
-
+/* more headers goes there */
 /**
- * main - Entry point. Generates a random number and prints the last digit.
+ * main - is entry point
+ * main - generates random numbers,delcares + OR -
  *
- * Return: 0 on success.
- * main - main block
- * Description: Get a random number and print the number
- * positive,nagetive or zero
+ * Return: 1, if succesful
  */
 int main(void)
-{
-	int n;
-	int last;
-
-	srand(time(0)); /* seed the random number generator with the current time */
-	n = rand(); /* generate a random number and store it in n */
-
-	printf("Last digit of %d is ", n);
-
-	int last_digit = n % 10;
+	/*code generates random number*/
 	srand(time(0));
-
 	n = rand() - RAND_MAX / 2;
-	last = n % 10;
-
-	if (last_digit > 5)
-	if (last == 0)
+	/* your code goes there */
+	if (n > 0)
 	{
-		printf("%d and is greater than 5\n", last_digit);
+		printf("%d is positive\n", n);
 	}
-	else if (last_digit == 0)
+	if (n < 0)
 	{
-		printf("0 and is 0\n");
-		printf("Last digit of %d is %d and is 0\n", n, last);
+		printf("%d is negative\n", n);
 	}
-	else
+	if (n == 0)
 	{
-		printf("%d and is less than 6 and not 0\n", last_digit);
+		printf("%d is zero\n", n);
 	}
-
 	return (0);
-		if (last > 5)
-		{
-			printf("Last digit of %d is %d and is greater than 5\n", n, last);
-		}
-		else if (last < 6)
-		{
-			printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
-		}
-	}	return (0);
-}
+}}
