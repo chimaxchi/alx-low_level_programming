@@ -3,9 +3,13 @@
 #include <stdio.h>
 
 /**
- * main - prints a random number
+ * main - Determines if a number is positive, negative or zero.
  *
- * return: 0
+ * Return: Always 0 (Success)
+ * main - main block
+ * Description: Get a random number and print the number
+ * positive,nagetive or zero
+ * Return: Always 0 (success)
  */
 int main(void)
 {
